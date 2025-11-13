@@ -19,25 +19,12 @@ export default function RootLayout({
           <nav className="container mx-auto px-4 py-3">
             <div className="flex justify-between items-center">
               <h1 className="text-xl font-bold text-blue-600">
-                MyLearningApp
+                TaskFlow
               </h1>
               
               <ul className="flex space-x-6">
-                <li>
-                  <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors">
-                    Blog
-                  </a>
-                </li>
+              
+
               </ul>
             </div>
           </nav>
@@ -52,7 +39,7 @@ export default function RootLayout({
        
         <footer className="bg-gray-800 text-white py-6 mt-12">
           <div className="container mx-auto px-4 text-center">
-            <p>&copy; 2024 My Learning Journey. Built with Next.js</p>
+            <p>&copy; 2025 My plan. Built with Next.js</p>
           </div>
         </footer>
       </body>
