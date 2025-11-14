@@ -13,16 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-50">
-       
-        <header className="bg-white shadow-sm">
-          <nav className="container mx-auto px-4 py-3">
-              <h1 className="text-xl font-bold text-blue-600">
-                TaskFlow
-              </h1>
-           </nav>
-        </header>
-       
+      <body className="bg-slate-100">  
 
        
         <main className="container mx-auto px-4 py-8">

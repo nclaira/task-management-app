@@ -24,19 +24,30 @@ export default function RegisterPage() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-xl font-bold mb-4">Register</h1>
-      <form onSubmit={handleRegister} className="space-y-4 w-64">
-        <input type="email" placeholder="Email" className="w-full border p-2" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" className="w-full border p-2" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <button className="w-full bg-green-500 text-white p-2 rounded" type="submit">Sign Up</button>
-      </form>
-      <button
-        className="mt-4 text-sm text-blue-600"
-        onClick={() => router.push('/login')} 
-      >
+
+    <div className ="flex flex-row gap-8 items-center justify-center min-h-screen bg-slate-900 p-8">
+
+      <div className="text-center">
+        <h1 className="text-5xl font-bold text-yellow-600 mb-2">Welcome to our platforrm</h1>
+        <p className="text-gray-600 text-2xl">Create your account to get started</p>
+      </div>
+
+      <div className="bg-white p-32 rounded-lg shadow-md">
+        <h1 className="text-2xl font-bold mb-4">Register</h1>
+        <form onSubmit={handleRegister} className="space-y-7 w-100">
+          <input type="email" placeholder="Email" className="w-full border p-5" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="password" placeholder="Password" className="w-full border p-5" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <button className="w-full bg-slate-500 text-xl text-white p-5 rounded hover:bg-slate-600 transition-colors" type="submit">Sign Up</button>
+        </form>
+        <button
+          className="mt-4 text-sm text-blue-600"
+          onClick={() => router.push('/login')} 
+        >
         Already have an account? Login
-      </button>
+        </button>
+      </div>
     </div>
+    
+    
   )
 }
