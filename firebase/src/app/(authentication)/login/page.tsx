@@ -24,19 +24,24 @@ export default function LoginPage() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-xl font-bold mb-4">Login</h1>
-      <form onSubmit={handleLogin} className="space-y-4 w-64">
-        <input type="email" placeholder="Email" className="w-full border p-2" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" className="w-full border p-2" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <button className="w-full bg-blue-500 text-white p-2 rounded" type="submit">Login</button>
-      </form>
-      <button
-        className="mt-4 text-sm text-blue-600"
-        onClick={() => router.push('/register')} 
-      >
-        Don't have an account? Register
-      </button>
+
+
+    <div>
+
+      <div className=''>
+
+      </div>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <h1 className="text-xl font-bold mb-4">Login</h1>
+        <form onSubmit={handleLogin} className="space-y-4 w-64">
+          <input type="email" placeholder="Email" className="w-full border p-2" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="password" placeholder="Password" className="w-full border p-2" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <button className="w-full bg-blue-500 text-white p-2 rounded" type="submit">Login</button>
+        </form>
+        <button className="mt-4 text-sm text-blue-600" onClick={() => router.push('/register')} >
+          Don't have an account? Register
+        </button>
+      </div>
     </div>
   )
 }
