@@ -27,7 +27,7 @@ export default function LoginPage() {
 
     <div className="flex flex-row gap-8 items-center justify-center min-h-screen bg-slate-900 p-8">
       <div className="text-center">
-        <h1 className="text-5xl font-bold text-yellow-600 mb-2">Welcome back to our platforrm</h1>
+        <h1 className="text-5xl font-bold text-yellow-600 mb-2">Welcome back to our platform</h1>
         <p className="text-gray-600 text-2xl">Log in to your account to get started</p>
       </div>
     
