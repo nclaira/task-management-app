@@ -39,11 +39,11 @@ export default function RegisterPage() {
           <input type="password" placeholder="Password" className="w-full border p-5" value={password} onChange={(e) => setPassword(e.target.value)} />
           <button className="w-full bg-slate-500 text-xl text-white p-5 rounded hover:bg-slate-600 transition-colors" type="submit">Sign Up</button>
         </form>
-        <button``
+        <button
           className="mt-4 text-sm text-blue-600"
           onClick={() => router.push('/login')} 
         >
-        Already have an account? Login
+          Already have an account? Login
         </button>
       </div>
     </div>
@@ -51,3 +51,4 @@ export default function RegisterPage() {
     
   )
 }
+
