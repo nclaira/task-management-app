@@ -171,8 +171,8 @@ export default function Dashboard() {
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="text-4xl font-bold text-yellow-600 mb-2">Task Dashboard</h1>
-            <p className="text-gray-400 text-lg">Welcome back, {user.email}</p>
+            <h1 className="text-6xl font-bold text-yellow-600 mb-2">Task Dashboard</h1>
+            <p className="text-gray-400 text-2xl">Welcome back, {user.email}</p>
           </div>
           <button
             onClick={handleLogout}
@@ -184,7 +184,7 @@ export default function Dashboard() {
 
         {/* Task Form */}
         <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6">
             {editingTask ? 'Edit Task' : 'Add New Task'}
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -227,7 +227,7 @@ export default function Dashboard() {
                 onChange={handleInputChange}
                 className="h-5 w-5 text-yellow-600 rounded"
               />
-              <label htmlFor="completed" className="text-gray-700 font-medium">
+              <label htmlFor="completed" className="text-gray-700 font-medium text-xl">
                 Mark as completed
               </label>
             </div>
@@ -252,7 +252,7 @@ export default function Dashboard() {
               )}
               <button
                 type="submit"
-                className="flex-1 bg-slate-600 text-white p-4 rounded-lg hover:bg-slate-700 transition-colors"
+                className="flex-1 bg-slate-600 text-white text-xl p-4 rounded-lg hover:bg-slate-700 transition-colors"
               >
                 {editingTask ? 'Update Task' : 'Add Task'}
               </button>
@@ -265,15 +265,15 @@ export default function Dashboard() {
           <h2 className="text-2xl font-bold mb-6">Your Tasks</h2>
           
           {tasks.length === 0 ? (
-            <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">No tasks yet. Add your first task!</p>
+            <div className="text-center text-2xl py-12">
+              <p className="text-gray-500 text-2xl">No tasks yet. Add your first task!</p>
             </div>
           ) : (
             <div className="space-y-4">
               {tasks.map((task) => (
                 <div 
                   key={task.id} 
-                  className={`p-4 rounded-lg border-l-4 ${
+                  className={`p-4 rounded-lg border-l-4 text-lg ${
                     task.priority === 'High' ? 'border-red-500 bg-red-50' : 
                     task.priority === 'Medium' ? 'border-yellow-500 bg-yellow-50' : 'border-green-500 bg-green-50'
                   }`}
